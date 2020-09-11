@@ -1,6 +1,6 @@
 <h1 align="center" style="text-align:center">🔑 Sort-Key</h1>
 
-<h4 align="center">Tiny library for generating and parsing DynamoDB sort keys.</h4>
+<h4 align="center">Tiny library for generating safe sort keys for DynamoDB.</h4>
 
 <p align="center">
   <a href="https://www.npmjs.org/package/sort-key">
