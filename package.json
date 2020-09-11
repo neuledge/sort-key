@@ -1,6 +1,6 @@
 {
   "name": "sort-key",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Tiny library for generating and parsing DynamoDB sort keys.",
   "keywords": [
     "DynamoDB",
