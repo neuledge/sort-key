@@ -8,7 +8,7 @@ export function generate(...parts: SortKeyParts): SortKey {
 }
 
 export function parse(key: SortKey): SortKeyParts {
-  return (`#${key}`.match(/#(\\.|[^#])*/g) || ['#']).map((item) =>
+  return (`#${key}`.match(/#(\\.|[^#])*/g) as string[]).map((item) =>
     item.replace(/\\(.)/g, '$1').substring(1),
   );
 }
