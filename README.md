@@ -22,9 +22,9 @@
 </p>
 <br>
 
-This library made for generating DynamoDB sort keys from multiple string parts as [recommended by
+Generating DynamoDB sort keys from multiple string parts as [recommended by
 AWS](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-sort-keys.html). It uses
- `#` as separator key and knows how to escape it when given on one of the key parts.
+ `#` as separator and knows how to escape it when given on one of the key parts.
 
 ```
 [country]#[region]#[state]#[county]#[city]#[neighborhood]
