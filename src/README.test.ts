@@ -15,12 +15,17 @@ describe('SortKey', () => {
     });
 
     it('Supports escaping as well', () => {
-      const SK = SortKey.generate('top', 'https://example.com/foo/bar#top');
-      assert.equal(SK, 'top#https://example.com/foo/bar\\#top');
+      const SK = SortKey.generate(
+        'example.com',
+        'foo',
+        'https://example.com/foo/bar#top',
+      );
+      assert.equal(SK, 'example.com#foo#https://example.com/foo/bar\\#top');
 
-      const [anchor, url] = SortKey.parse(SK);
+      const [domain, page, url] = SortKey.parse(SK);
 
-      assert.equal(anchor, 'top');
+      assert.equal(domain, 'example.com');
+      assert.equal(page, 'foo');
       assert.equal(url, 'https://example.com/foo/bar#top');
     });
   });
