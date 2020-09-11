@@ -5,13 +5,13 @@ import SortKey from './';
 describe('SortKey', () => {
   describe('README', () => {
     it('Usage', () => {
-      const SK = SortKey.generate('[order]', '[item]');
-      assert.equal(SK, '[order]#[item]');
+      const SK = SortKey.generate('1532208', '2020-09-11T15:30:06.822Z');
+      assert.equal(SK, '1532208#2020-09-11T15:30:06.822Z');
 
       const [order, item] = SortKey.parse(SK);
 
-      assert.equal(order, '[order]');
-      assert.equal(item, '[item]');
+      assert.equal(order, '1532208');
+      assert.equal(item, '2020-09-11T15:30:06.822Z');
     });
 
     it('Supports escaping as well', () => {

@@ -23,7 +23,8 @@
 <br>
 
 This library made for generating DynamoDB sort keys from multiple string parts as [recommended by
-AWS](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-sort-keys.html):
+AWS](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-sort-keys.html). It uses
+ `#` as separator key and knows how to escape it when given on one of the key parts.
 
 ```
 [country]#[region]#[state]#[county]#[city]#[neighborhood]
@@ -42,10 +43,10 @@ npm i sort-key
 ```ts
 import SortKey from 'sort-key';
 
-const SK = SortKey.generate('[order]', '[item]');
-// "[order]#[item]"
+const SK = SortKey.generate('1532208', '2020-09-11T15:30:06.822Z');
+// "1532208#2020-09-11T15:30:06.822Z"
 
-const [order, item] = SortKey.parse(SK);
+const [order, time] = SortKey.parse(SK);
 ```
 
 #### It supports escaping as well:
