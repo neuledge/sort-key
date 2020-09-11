@@ -9,8 +9,8 @@
   <a href="https://travis-ci.com/neuledge/sort-key">
     <img src="https://travis-ci.com/neuledge/sort-key.svg?branch=master" alt="Build Status">
   </a>
-  <a href="https://depfu.com/github/neuledge/sort-key?project_id=13055">
-    <img src="https://badges.depfu.com/badges/c06bc1e007e8b7f804d8563a56bb2ced/overview.svg" alt="Dependency Status">
+  <a href="https://depfu.com/github/neuledge/sort-key?project_id=15586">
+    <img src="https://badges.depfu.com/badges/c8d7e8c2c15dc9427a6d96b382a83cd8/overview.svg" alt="Dependency Status">
   </a>
   <a href="https://coveralls.io/github/neuledge/sort-key?branch=master">
     <img src="https://coveralls.io/repos/github/neuledge/sort-key/badge.svg?branch=master"
