@@ -47,6 +47,8 @@ const SK = SortKey.generate('1532208', '2020-09-11T15:30:06.822Z');
 // "1532208#2020-09-11T15:30:06.822Z"
 
 const [order, time] = SortKey.parse(SK);
+// "1532208" "2020-09-11T15:30:06.822Z"
+
 ```
 
 #### It supports escaping as well:
@@ -55,7 +57,8 @@ const [order, time] = SortKey.parse(SK);
 const SK = SortKey.generate('top', 'https://example.com/foo/bar#top');
 // top#https://example.com/foo/bar\\#top
 
-const [anchor, url] = SortKey.parse(SK);
+const [anchor, url] = SortKey.parse(SK);  
+// "top" "https://example.com/foo/bar#top"
 ```
 
 <br>
