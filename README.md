@@ -6,11 +6,13 @@
   <a href="https://www.npmjs.org/package/sort-key">
     <img src="http://img.shields.io/npm/v/sort-key.svg" alt="View On NPM">
   </a>
-  <a href="https://travis-ci.com/neuledge/sort-key">
-    <img src="https://travis-ci.com/neuledge/sort-key.svg?branch=master" alt="Build Status">
+  <a href="https://github.com/neuledge/sort-key/actions/workflows/build.yml">
+    <img src="https://github.com/neuledge/sort-key/actions/workflows/build.yml/badge.svg"
+      alt="Build Status">
   </a>
   <a href="https://depfu.com/github/neuledge/sort-key?project_id=15586">
-    <img src="https://badges.depfu.com/badges/c8d7e8c2c15dc9427a6d96b382a83cd8/overview.svg" alt="Dependency Status">
+    <img src="https://badges.depfu.com/badges/c8d7e8c2c15dc9427a6d96b382a83cd8/overview.svg"
+       alt="Dependency Status">
   </a>
   <a href="https://coveralls.io/github/neuledge/sort-key?branch=master">
     <img src="https://coveralls.io/repos/github/neuledge/sort-key/badge.svg?branch=master"
