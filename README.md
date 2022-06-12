@@ -14,8 +14,8 @@
     <img src="https://badges.depfu.com/badges/c8d7e8c2c15dc9427a6d96b382a83cd8/overview.svg"
        alt="Dependency Status">
   </a>
-  <a href="https://coveralls.io/github/neuledge/sort-key?branch=master">
-    <img src="https://coveralls.io/repos/github/neuledge/sort-key/badge.svg?branch=master"
+  <a href="https://codecov.io/gh/neuledge/sort-key">
+    <img src="https://codecov.io/gh/neuledge/sort-key/branch/master/graph/badge.svg?token=IG7TTIBZRY"
       alt="Coverage Status" />
   </a>
   <a href="LICENSE">
@@ -26,7 +26,7 @@
 
 Generating DynamoDB sort keys from multiple string parts as [recommended by
 AWS](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-sort-keys.html). It uses
- `#` as separator and knows how to escape it when given on one of the key parts.
+`#` as separator and knows how to escape it when given on one of the key parts.
 
 ```
 [country]#[region]#[state]#[county]#[city]#[neighborhood]
@@ -55,7 +55,11 @@ const [order, time] = SortKey.parse(SK);
 #### It supports escaping as well:
 
 ```ts
-const SK = SortKey.generate('example.com', 'foo', 'https://example.com/foo/bar#top');
+const SK = SortKey.generate(
+  'example.com',
+  'foo',
+  'https://example.com/foo/bar#top',
+);
 // example.com#foo#https://example.com/foo/bar\#top
 
 const [domain, page, url] = SortKey.parse(SK);
