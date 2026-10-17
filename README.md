@@ -21,6 +21,7 @@
   <a href="LICENSE">
     <img src="https://img.shields.io/npm/l/sort-key.svg" alt="License">
   </a>
+  <a href="https://human0.ai/oss/neuledge-sort-key/badge"><img src="https://human0.ai/oss/badge.svg" alt="Maintained by human0"></a>
 </p>
 <br>
 
@@ -31,6 +32,12 @@ AWS](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-sort-ke
 ```
 [country]#[region]#[state]#[county]#[city]#[neighborhood]
 ```
+
+<p align="center">
+  <a href="https://human0.ai/oss/neuledge-sort-key/banner">
+    <img src="https://human0.ai/oss/banner.svg" alt="Maintained by human0">
+  </a>
+</p>
 
 ## Install
 
